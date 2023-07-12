@@ -4,7 +4,10 @@
 }
 
 body {
-  margin: 0px 100px;
+  min-width: 950px;
+  max-width: 1600px;
+  margin: 0px auto;
+  padding: 0px 100px;
 }
 
 .text {
@@ -21,6 +24,15 @@ body {
   font-weight: 800;
 }
 
+.sub-title-1 {
+  color: #272727;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 35px;
+  text-decoration-line: underline;
+}
+
 .button {
   padding: 20px 43px;
   border: none;
@@ -30,6 +42,8 @@ body {
   color: white;
   font-weight: 700;
 }
+
+/* ---------------HERO SECTION-------------- */
 
 section#hero {
   display: flex;
@@ -64,7 +78,7 @@ h1.heading {
   margin-top: 50px;
 }
 
-/* Feature Section */
+/* -------------FEATURE SECTION---------------- */
 
 section#feature {
   margin-top: 170px;
@@ -76,4 +90,37 @@ section#feature {
 
 #feature div.description .text {
   margin-top: 20px;
+}
+
+#feature div.flower-tree-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 45px;
+}
+
+#feature div.flower-tree-container > div {
+  width: 32%;
+}
+
+#feature div.flower-tree-container div.flower-wrapper {
+  border-radius: 300px 300px 0px 0px;
+  background: rgba(167, 33, 98, 0.15);
+  display: flex;
+  justify-content: center;
+  height: 70%;
+  margin-bottom: 30px;
+}
+
+#feature div.flower-tree-container img {
+  max-width: 75%;
+  margin-top: 100px;
+}
+
+#feature div.benifits {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  border-radius: 8px;
+  background: rgba(39, 39, 39, 0.05);
+  padding: 86px 0px;
 }
